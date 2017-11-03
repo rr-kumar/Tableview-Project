@@ -29,6 +29,7 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       tableView.deselectRow(at: indexPath, animated: true)
         let stuff = buy[indexPath.row]
         
         performSegue(withIdentifier: "segueOne", sender: stuff)

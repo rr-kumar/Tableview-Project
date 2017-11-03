@@ -73,6 +73,9 @@
                         <viewLayoutGuide key="safeArea" id="Idr-Ov-Zc1"/>
                     </view>
                     <navigationItem key="navigationItem" id="RLn-ip-iRk"/>
+                    <connections>
+                        <outlet property="secLabel" destination="9oQ-nJ-A9z" id="Zha-bs-dS7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R7I-ot-8Yx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

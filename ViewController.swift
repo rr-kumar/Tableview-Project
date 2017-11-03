@@ -30,11 +30,16 @@ class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let stuff = buy[indexPath.row]
+        
         performSegue(withIdentifier: "segueOne", sender: stuff)
+        
+        
     }
-    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        print(sender)
+       
+        let secVC = segue.destination as! SecondViewController
+        
+        secVC.newbuy = sender as! String
     }
     
     override func didReceiveMemoryWarning() {

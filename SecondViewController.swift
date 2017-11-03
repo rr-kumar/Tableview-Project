@@ -9,11 +9,15 @@
 import UIKit
 
 class SecondViewController: UIViewController {
-
+    
+    @IBOutlet weak var secLabel: UILabel!
+    
+    var newbuy = "new"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+   
+        secLabel.text = newbuy
     }
 
     override func didReceiveMemoryWarning() {

@@ -4,7 +4,7 @@
 //
 //  Created by Apple on 31/10/17.
 //  Copyright © 2017 Apple. All rights reserved.
-//
+//  Going to use git by Xcode.
 
 import UIKit
 

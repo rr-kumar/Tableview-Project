@@ -10,6 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
     
+    @IBOutlet weak var cateGoryLabel: UILabel!
+    @IBOutlet weak var manFacLabel: UILabel!
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var secLabel: UILabel!
     
@@ -22,12 +24,18 @@ class SecondViewController: UIViewController {
         
         if newbuy == "👕" {
             descLabel.text = "Zara Shirt"
+            manFacLabel.text = "Manf.Year: 2017"
+            cateGoryLabel.text = "Categ: Men"
         }
         if newbuy == "👖" {
             descLabel.text = "Zara Jeans"
+            manFacLabel.text = "Manf.Year: 2017"
+            cateGoryLabel.text = "Categ: Men"
         }
         if newbuy == "👗" {
             descLabel.text = "Zara Frock"
+            manFacLabel.text = "Manf.Year: 2017"
+            cateGoryLabel.text = "Categ: Women"
         }
         if newbuy == "👠" {
             descLabel.text = "Zara High Heel"

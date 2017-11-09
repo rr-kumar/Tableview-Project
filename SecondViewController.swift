@@ -15,64 +15,18 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var descLabel: UILabel!
     @IBOutlet weak var secLabel: UILabel!
     
-    var newbuy = ""
+    var newbuy = Shopnow()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        secLabel.text = newbuy
+        secLabel.text = newbuy.product
+        descLabel.text = "\(newbuy.prodName)"
+        manFacLabel.text = "Manf.Year: \(newbuy.manfyear)"
+        cateGoryLabel.text = "Categ: \(newbuy.categ)"
         
-        if newbuy == "👕" {
-            descLabel.text = "Zara Shirt"
-            manFacLabel.text = "Manf.Year: 2017"
-            cateGoryLabel.text = "Categ: Men"
-        }
-        if newbuy == "👖" {
-            descLabel.text = "Zara Jeans"
-            manFacLabel.text = "Manf.Year: 2017"
-            cateGoryLabel.text = "Categ: Men"
-        }
-        if newbuy == "👗" {
-            descLabel.text = "Zara Frock"
-            manFacLabel.text = "Manf.Year: 2017"
-            cateGoryLabel.text = "Categ: Women"
-        }
-        if newbuy == "👠" {
-            descLabel.text = "Zara High Heel"
-        }
-        if newbuy == "👞" {
-            descLabel.text = "Zara Boot"
-        }
-        if newbuy == "🕶" {
-            descLabel.text = "Rayban Sunglass"
-        }
-        if newbuy == "👜" {
-            descLabel.text = "Fossil Handbag"
-        }
-        if newbuy == "💼" {
-            descLabel.text = "Fossil Office Bag"
-        }
-        if newbuy == "👓" {
-            descLabel.text = "Lanskart Glasses"
-        }
-        if newbuy == "👡" {
-            descLabel.text = "Lifestyle sandle"
-        }
-        if newbuy == "👔" {
-            descLabel.text = "Calvin Kelin Shirt"
-        }
-        if newbuy == "👛" {
-            descLabel.text = "Gulachi Womens wallet"
-        }
-        if newbuy == "🎒" {
-            descLabel.text = "Zara Red Bag"
-        }
-        if newbuy == "👟" {
-            descLabel.text = "Nike Sneeker"
-        }
-        if newbuy == "👚" {
-            descLabel.text = "Polo Womens Tshirt"
-        }
+        
+        
     }
     
     override func didReceiveMemoryWarning() {
